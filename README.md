@@ -1,7 +1,14 @@
 # Claude Haiku 5.5 C# Demo
 
+![Claude Haiku 5.5](ClaudeHaiku5.5forCSharpDevelopers.png)
+
 [![.NET 10](https://img.shields.io/badge/.NET-10-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![C# Developers](https://img.shields.io/badge/For-C%23%20Developers-239120)
+![Azure Identity](https://img.shields.io/badge/Azure%20Identity-DefaultAzureCredential-0089D6)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
+![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red)
+
 
 A .NET 10 console app that demonstrates common Claude model patterns on Microsoft Foundry, using the Anthropic C# SDK and Entra ID (Azure Identity) authentication. Each use case is a small, self-contained example.
 
