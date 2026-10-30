@@ -2,14 +2,19 @@
 
 ![Claude Haiku 5.5](ClaudeHaiku5.5forCSharpDevelopers.png)
 
+[![Build](https://github.com/taswar/Claude-Haiku-5.5-CSharp-Demo/actions/workflows/dotnet.yml/badge.svg)](https://github.com/taswar/Claude-Haiku-5.5-CSharp-Demo/actions/workflows/dotnet.yml)
 [![.NET 10](https://img.shields.io/badge/.NET-10-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![C# Developers](https://img.shields.io/badge/For-C%23%20Developers-239120)
 ![Claude Haiku 5.5](https://img.shields.io/badge/Claude%20Haiku%205.5-Ultra%20Fast%20Model-orange)
 ![Azure Identity](https://img.shields.io/badge/Azure%20Identity-DefaultAzureCredential-0089D6)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
-![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
 
+- 📖 Full walkthrough: [Claude Haiku 5.5 for C# Developers](https://taswar.zeytinsoft.com/claude-haiku-5-5-for-c-developers-the-speed-cost-sweet-spot/)
+- ⭐ If this sample helps you, star the repo so other .NET developers can find it.
+- 🔁 Related: [Claude Opus 5.5 C# Demo](https://github.com/taswar/ClaudeOpus5.5-Csharp-Demo), the planner model in use case 5
+- For more C# samples using other AI models, see [AI models for C# developers](https://taswar.zeytinsoft.com/foundry-ai-models-csharp/)
+- For my free ebook on prompt engineering, see [Prompt Engineering for .NET Developers](https://github.com/taswar/PromptEngineeringForDotNetDevelopers)
 
 A .NET 10 console app that demonstrates common Claude model patterns on Microsoft Foundry, using the Anthropic C# SDK and Entra ID (Azure Identity) authentication. Each use case is a small, self-contained example.
 
@@ -17,7 +22,17 @@ A .NET 10 console app that demonstrates common Claude model patterns on Microsof
 - Optimized for speed and efficiency
 - Ideal for summarization, classification, and short reasoning tasks
 - Low latency and cost‑efficient for production workloads
-- Use for Multi Agent, Planner using Opus and sub agents using Haiku
+- Fits multi-agent systems: Opus plans the work and Haiku sub-agents execute it (use case 5)
+
+## Quick start
+
+```bash
+git clone https://github.com/taswar/Claude-Haiku-5.5-CSharp-Demo.git
+cd Claude-Haiku-5.5-CSharp-Demo
+dotnet user-secrets set "AZURE_AI_FOUNDRY_RESOURCE" "<your-foundry-resource-name>"
+az login
+dotnet run -- 1
+```
 
 ## Prerequisites
 
@@ -67,7 +82,7 @@ Running with no argument runs case 1. Running `all` runs every case in order.
 | 3 | Refusal handling | Detecting `StopReason.Refusal` as a normal response, not an exception | Haiku | `StopReason` |
 | 4 | Bulk classification | Classifying many tickets in parallel batches with cancellation | Haiku | `Chunk`, `Task` |
 | 5 | Subagent pattern | Opus plans the work, Haiku executes subtasks | Opus + Haiku | Second client, `AZURE_AI_FOUNDRY_*_OPUS` |
-| 6 | Context compression | Summarizing a long conversation to reduce tokens | Haiku | Message history |
+| 6 | Context compression | Condensing a long API specification into a summary, security checklist and pitfalls | Haiku | Long prompt, `MaxTokens` |
 
 ## Important: Use case 5 may use a different endpoint
 
@@ -100,6 +115,9 @@ Cases 1–4 and 6 are not affected by these settings.
 ```
 Program.cs                           Entry point, configuration, and all use cases
 Claude-Haiku-5.5-CSharp-Demo.csproj  .NET 10 project and package references
+ClaudeHaiku5.5forCSharpDevelopers.png  README banner image
+CONTRIBUTING.md                      How to contribute
+.github/workflows/dotnet.yml         Build workflow
 LICENSE                              MIT license
 README.md                            This file
 ```
