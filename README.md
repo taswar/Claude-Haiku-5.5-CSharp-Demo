@@ -10,10 +10,10 @@
 ![Azure Identity](https://img.shields.io/badge/Azure%20Identity-DefaultAzureCredential-0089D6)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
 
-- 📖 Full walkthrough: [Claude Haiku 5.5 for C# Developers](https://taswar.zeytinsoft.com/claude-haiku-5-5-for-c-developers-the-speed-cost-sweet-spot/)
+- 📖 Full walkthrough: [Claude Haiku 5.5 for C# Developers](https://taswar.zeytinsoft.com/claude-haiku-5-5-for-c-developers-the-speed-cost-sweet-spot/?utm_source=github&utm_medium=readme&utm_campaign=Claude-Haiku-5.5-CSharp-Demo&utm_content=walkthrough)
 - ⭐ If this sample helps you, star the repo so other .NET developers can find it.
 - 🔁 Related: [Claude Opus 5.5 C# Demo](https://github.com/taswar/ClaudeOpus5.5-Csharp-Demo), the planner model in use case 5
-- For more C# samples using other AI models, see [AI models for C# developers](https://taswar.zeytinsoft.com/foundry-ai-models-csharp/)
+- For more C# samples using other AI models, see [AI models for C# developers](https://taswar.zeytinsoft.com/foundry-ai-models-csharp/?utm_source=github&utm_medium=readme&utm_campaign=Claude-Haiku-5.5-CSharp-Demo&utm_content=ai-models-hub)
 - For my free ebook on prompt engineering, see [Prompt Engineering for .NET Developers](https://github.com/taswar/PromptEngineeringForDotNetDevelopers)
 
 A .NET 10 console app that demonstrates common Claude model patterns on Microsoft Foundry, using the Anthropic C# SDK and Entra ID (Azure Identity) authentication. Each use case is a small, self-contained example.
